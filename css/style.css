@@ -91,12 +91,36 @@ img {
     visibility: visible;
 }
 
+footer {
+  margin: 30px;
+  background-color: #1B1F3A;
+  padding: 20px;
+}
+
+footer p {
+  margin: 10px;
+}
+
+footer p a {
+  background-color: #A64942;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 25px;
+  color: #F7F5EB;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  background-color: #53354A;
+  text-decoration: underline
+}
+
 
 /* Mobile first Index page */
 
 .container {
     padding: 20px 30px;
-    margin: 0 auto;
+    height: 1050px;
     max-width: 900px;
 }
 
@@ -189,6 +213,9 @@ img {
     grid-column: 6 / -1;
     grid-row: 7;
 }
+
+
+/* About page */
 
 
 
