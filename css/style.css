@@ -230,6 +230,14 @@ footer p a:hover {
   background-color: #1B1F3A;
 }
 
+#about_div h2 {
+  font-size: 26pt;
+}
+
+#about_div p {
+  font-size: 18pt;
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -303,7 +311,7 @@ footer p a:hover {
   }
   
   .image-stack {
-    margin-top: 15%;
+    margin-top: 20%;
     height: 975px;
     width: 1500px;
     position: absolute;
