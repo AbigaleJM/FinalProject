@@ -7,16 +7,15 @@
   <!-- connects to the stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylehseet" href="dist/css/lightbox.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Grenze+Gotisch">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn+SC">
   <script src="https://kit.fontawesome.com/9ee077d012.js" crossorigin="anonymous"></script>
   <title>Abigale Mumby</title>
 </head>
-<body>
+<body id="about_body">
     <header>
-        <a href="#main" class="skip">Skip to main content</a>
+        <a href="#about_main" class="skip">Skip to main content</a>
           <nav>
               <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,16 +23,81 @@
               </ul>
           </nav>
         </header>
-    <main>
+    <main id="about_main">
+      <div id="about_div">
         <h1>About</h1>
         <h2>Hi, my name is Abigale!</h2>
-            <p>This website is a final project for the graduate level web design class at the University of Michgan</p>
-          <a href="images/DSC01902.jpg" data-lightbox="image-1" data-title="Caption"></a>
-          <a href="images/DSC01926.jpg" data-lightbox="image-1" data-title="Caption"></a>
-          <a href="images/DSC01900.jpg" data-lightbox="image-1" data-title="Caption"></a>
-          <a href="images/DSC02007.jpg" data-lightbox="image-1" data-title="Caption"></a>
+            <p>This website is a final project for the graduate level web design class at the University of Michigan. Please check out my modeling portfolio below.</p>
+            <p>Please check out the photographer, Kristen Gravlin, at <a id="Kristen" href="https://www.kristengravlinphotography.com/">Kristen Gravlin Photography.</a></p>
+          </div>
 
-    
+<div class="row">
+  <div class="column">
+    <img src="images/DSC01902.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/DSC01926.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/DSC01900.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/DSC02007.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/DSC01902.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/DSC01926.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/DSC01900.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/DSC02007.jpg" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo" src="images/DSC01902.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/DSC01926.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/DSC01900.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/DSC02007.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+
     </main>
     <footer>
       <p class="thanks">
@@ -42,5 +106,5 @@
         <p>Orginal photos by Kristen Gravlin</p>
         <p><a href="#main">Back to Top</a></p>
   </footer>
-<script src="dist/js/lightbox-plus-jquery.js"></script>    
+<script src="js/about_script.js"></script>    
 </body>
