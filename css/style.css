@@ -487,7 +487,7 @@ footer p a:hover {
   /* Create four equal columns that floats next to eachother */
   .column {
     float: left;
-    width: 400px;
+    width: 350px;
   }
   
   /* The Modal (background) */
