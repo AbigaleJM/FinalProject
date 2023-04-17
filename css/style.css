@@ -96,6 +96,7 @@ footer {
   margin: 30px;
   background-color: #1B1F3A;
   padding: 20px;
+  margin-top: 1300px;
 }
 
 footer p {
@@ -273,7 +274,9 @@ footer p a:hover {
 /* Media Query Desktop Viewport */
 @media screen and (min-width: 1300px) {
   /* General */
-
+  footer {
+    margin-top: 300px
+  }
   /* Index Page */
   #index_div {
     background-image: url("../images/orange_wallpaper.jpg");
